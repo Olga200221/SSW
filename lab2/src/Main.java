@@ -20,7 +20,13 @@ class MyThread extends Thread {
         this.sleepTime = sleepTime;
     }
 
-
+    @Override
     public void run() {
+        long startTime = System.currentTimeMillis();
+        StringBuilder progressBar = new StringBuilder("Thread |" + threadNumber + " [");
+
+        for (int j = 0; j < calculationLength; j++) {
+            progressBar.append("=");
+            System.out.print("\r" + progressBar.toString() + " ");
     }
 }
