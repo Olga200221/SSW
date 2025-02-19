@@ -28,5 +28,11 @@ class MyThread extends Thread {
         for (int j = 0; j < calculationLength; j++) {
             progressBar.append("=");
             System.out.print("\r" + progressBar.toString() + " ");
+		try {
+                	Thread.sleep(sleepTime);
+            	} catch (InterruptedException e) {
+                Thread.currentThread().interrupt();
+            }
+        }
     }
 }
