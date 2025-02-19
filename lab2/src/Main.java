@@ -9,6 +9,7 @@ public class Main {
         }
     }
 }
+
 class MyThread extends Thread {
     private final int threadNumber;
     private final int calculationLength;
@@ -28,11 +29,15 @@ class MyThread extends Thread {
         for (int j = 0; j < calculationLength; j++) {
             progressBar.append("=");
             System.out.print("\r" + progressBar.toString() + " ");
-		try {
-                	Thread.sleep(sleepTime);
-            	} catch (InterruptedException e) {
+            try {
+                Thread.sleep(sleepTime);
+            } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
             }
         }
+
+        progressBar.append("] Done");
+        long endTime = System.currentTimeMillis();
+        System.out.println("\n" + progressBar + " - Time taken: " + (endTime - startTime) + " ms");
     }
 }
