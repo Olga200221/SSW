@@ -9,3 +9,18 @@ public class Main {
         }
     }
 }
+class MyThread extends Thread {
+    private final int threadNumber;
+    private final int calculationLength;
+    private final int sleepTime;
+
+    public MyThread(int threadNumber, int calculationLength, int sleepTime) {
+        this.threadNumber = threadNumber;
+        this.calculationLength = calculationLength;
+        this.sleepTime = sleepTime;
+    }
+
+
+    public void run() {
+    }
+}
