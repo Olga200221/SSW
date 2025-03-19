@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DiffGenerationConfig">
+    <option name="sourceModelValue" value="petstore:petstore" />
+    <option name="targetDbValue" value="b4da1abb-a074-4181-b858-713fefe8cbde" />
+    <option name="updateChangeLogPath" value="src/main/resources/db/changelog/db.changelog-master.xml" />
+    <option name="updateDbConnectionName" value="b4da1abb-a074-4181-b858-713fefe8cbde" />
+  </component>
+</project>
