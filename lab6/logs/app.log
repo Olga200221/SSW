@@ -1,0 +1,459 @@
+2025-03-26 00:01:23 [main] INFO  io.swagger.Swagger2SpringBoot - Starting Swagger2SpringBoot on DESKTOP-EG9THKE with PID 11044 (C:\Users\User\Downloads\lab6\target\classes started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:01:23 [main] DEBUG io.swagger.Swagger2SpringBoot - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:01:23 [main] INFO  io.swagger.Swagger2SpringBoot - No active profile set, falling back to default profiles: default
+2025-03-26 00:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 00:01:24 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 130ms. Found 1 JPA repository interfaces.
+2025-03-26 00:01:25 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-26 00:01:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:01:25 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 00:01:25 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2025-03-26 00:01:25 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 00:01:25 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2393 ms
+2025-03-26 00:01:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 00:01:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 00:01:26 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:01:26 [main] INFO  liquibase.changelog - Creating database history table with name: public.databasechangelog
+2025-03-26 00:01:26 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-03-26 00:01:26 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:01:26 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:01:26 [main] WARN  liquibase.hub - Skipping auto-registration
+2025-03-26 00:01:26 [main] INFO  liquibase.changelog - Table comments created
+2025-03-26 00:01:26 [main] INFO  liquibase.changelog - ChangeSet db/changelog/changes/001-create-comments-table.yaml::1::2dear ran successfully in 10ms
+2025-03-26 00:01:26 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:01:27 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-03-26 00:01:27 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.17.Final}
+2025-03-26 00:01:27 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-03-26 00:01:27 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-03-26 00:01:27 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2025-03-26 00:01:27 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2025-03-26 00:01:27 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6d52f156
+2025-03-26 00:01:27 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:01:28 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:01:28 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 00:01:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:01:28 [main] ERROR o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:543)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+	... 16 common frames omitted
+2025-03-26 00:01:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:01:28 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-26 00:01:28 [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2025-03-26 00:01:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:01:28 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:01:28 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-26 00:01:28 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2025-03-26 00:01:28 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:01:28 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:01:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 00:01:28 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 00:01:48 [main] INFO  i.s.api.CommentsApiControllerTest - Starting CommentsApiControllerTest on DESKTOP-EG9THKE with PID 1204 (started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:01:48 [main] DEBUG i.s.api.CommentsApiControllerTest - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:01:48 [main] INFO  i.s.api.CommentsApiControllerTest - No active profile set, falling back to default profiles: default
+2025-03-26 00:01:50 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:01:50 [main] INFO  o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+2025-03-26 00:01:50 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+2025-03-26 00:01:50 [main] INFO  o.s.t.w.s.TestDispatcherServlet - Completed initialization in 16 ms
+2025-03-26 00:01:50 [main] INFO  i.s.api.CommentsApiControllerTest - Started CommentsApiControllerTest in 3.004 seconds (JVM running for 4.072)
+2025-03-26 00:01:51 [main] INFO  io.swagger.api.CommentsApiController - Получен запрос на удаление комментария с ID: 1
+2025-03-26 00:01:51 [main] DEBUG io.swagger.api.CommentsApiController - Запрос на удаление комментария с ID 1 успешно обработан
+2025-03-26 00:01:51 [main] INFO  io.swagger.api.CommentsApiController - Получен запрос на получение комментария по ID: 1
+2025-03-26 00:01:51 [main] DEBUG io.swagger.api.CommentsApiController - Запрос на получение комментария успешно обработан: content=Test content, author=Test author
+2025-03-26 00:01:51 [main] INFO  io.swagger.api.CommentsApiController - Получен запрос на создание комментария: content=Test content, author=Test author
+2025-03-26 00:01:51 [main] DEBUG io.swagger.api.CommentsApiController - Запрос на создание комментария успешно обработан, ID: 1
+2025-03-26 00:01:51 [main] INFO  io.swagger.api.CommentsApiController - Получен запрос на обновление комментария с ID: 1
+2025-03-26 00:01:51 [main] DEBUG io.swagger.api.CommentsApiController - Запрос на обновление комментария успешно обработан: content=Updated content, author=Updated author
+2025-03-26 00:01:51 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:03:19 [main] INFO  io.swagger.Swagger2SpringBoot - Starting Swagger2SpringBoot on DESKTOP-EG9THKE with PID 9208 (C:\Users\User\Downloads\lab6\target\classes started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:03:19 [main] DEBUG io.swagger.Swagger2SpringBoot - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:03:19 [main] INFO  io.swagger.Swagger2SpringBoot - No active profile set, falling back to default profiles: default
+2025-03-26 00:03:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 00:03:21 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 158ms. Found 1 JPA repository interfaces.
+2025-03-26 00:03:22 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-26 00:03:22 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:03:22 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 00:03:22 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2025-03-26 00:03:22 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 00:03:22 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2663 ms
+2025-03-26 00:03:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 00:03:23 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 00:03:23 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:03:23 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-03-26 00:03:23 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:03:23 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:03:23 [main] WARN  liquibase.hub - Skipping auto-registration
+2025-03-26 00:03:23 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:03:24 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-03-26 00:03:24 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.17.Final}
+2025-03-26 00:03:24 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-03-26 00:03:24 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-03-26 00:03:24 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2025-03-26 00:03:24 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2025-03-26 00:03:24 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@55f768bd
+2025-03-26 00:03:24 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:03:25 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:03:25 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 00:03:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:03:25 [main] ERROR o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:543)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+	... 16 common frames omitted
+2025-03-26 00:03:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:03:25 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-26 00:03:25 [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2025-03-26 00:03:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:03:25 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:03:25 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-26 00:03:25 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2025-03-26 00:03:26 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:03:26 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:03:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 00:03:26 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 00:07:04 [main] INFO  io.swagger.Swagger2SpringBoot - Starting Swagger2SpringBoot on DESKTOP-EG9THKE with PID 11564 (C:\Users\User\Downloads\lab6\target\classes started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:07:04 [main] DEBUG io.swagger.Swagger2SpringBoot - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:07:04 [main] INFO  io.swagger.Swagger2SpringBoot - No active profile set, falling back to default profiles: default
+2025-03-26 00:07:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 00:07:05 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 133ms. Found 1 JPA repository interfaces.
+2025-03-26 00:07:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-26 00:07:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:07:06 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 00:07:06 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2025-03-26 00:07:06 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 00:07:06 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2572 ms
+2025-03-26 00:07:06 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 00:07:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 00:07:07 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:07:07 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-03-26 00:07:07 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:07:07 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:07:07 [main] WARN  liquibase.hub - Skipping auto-registration
+2025-03-26 00:07:07 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:07:08 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-03-26 00:07:08 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.17.Final}
+2025-03-26 00:07:08 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-03-26 00:07:08 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-03-26 00:07:08 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2025-03-26 00:07:08 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2025-03-26 00:07:08 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4436b3df
+2025-03-26 00:07:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:07:09 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:07:09 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 00:07:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:07:09 [main] ERROR o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:31)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:543)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:565)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.netBind(ServerSocketChannelImpl.java:344)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:301)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:89)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+	... 16 common frames omitted
+2025-03-26 00:07:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:07:09 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-26 00:07:09 [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2025-03-26 00:07:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:07:09 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:07:09 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-26 00:07:09 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2025-03-26 00:07:09 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:07:09 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:07:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 00:07:09 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 00:08:01 [main] INFO  io.swagger.Swagger2SpringBoot - Starting Swagger2SpringBoot on DESKTOP-EG9THKE with PID 9620 (C:\Users\User\Downloads\lab6\target\classes started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:08:01 [main] DEBUG io.swagger.Swagger2SpringBoot - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:08:01 [main] INFO  io.swagger.Swagger2SpringBoot - No active profile set, falling back to default profiles: default
+2025-03-26 00:08:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 00:08:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 192ms. Found 1 JPA repository interfaces.
+2025-03-26 00:08:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-03-26 00:08:04 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:08:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 00:08:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2025-03-26 00:08:04 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 00:08:04 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3506 ms
+2025-03-26 00:08:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 00:08:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 00:08:05 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:08:06 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-03-26 00:08:06 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:08:06 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:08:06 [main] WARN  liquibase.hub - Skipping auto-registration
+2025-03-26 00:08:06 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:08:06 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-03-26 00:08:06 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.17.Final}
+2025-03-26 00:08:06 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-03-26 00:08:06 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-03-26 00:08:06 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2025-03-26 00:08:06 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2025-03-26 00:08:06 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@75db328e
+2025-03-26 00:08:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:08:07 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:08:08 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 00:08:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:08:08 [main] ERROR o.apache.catalina.util.LifecycleBase - Failed to start component [Connector[HTTP/1.1-8080]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at io.swagger.Swagger2SpringBoot.main(Swagger2SpringBoot.java:31)
+Caused by: java.net.BindException: Address already in use: bind
+	at java.base/sun.nio.ch.Net.bind0(Native Method)
+	at java.base/sun.nio.ch.Net.bind(Net.java:459)
+	at java.base/sun.nio.ch.Net.bind(Net.java:448)
+	at java.base/sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:227)
+	at java.base/sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:80)
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211)
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064)
+	... 12 common frames omitted
+2025-03-26 00:08:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:08:08 [main] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-03-26 00:08:08 [main] INFO  o.apache.catalina.util.LifecycleBase - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2025-03-26 00:08:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:08:08 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8080"]
+2025-03-26 00:08:08 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-03-26 00:08:08 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2025-03-26 00:08:08 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:08:08 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:08:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 00:08:08 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-03-26 00:10:10 [main] INFO  io.swagger.Swagger2SpringBoot - Starting Swagger2SpringBoot on DESKTOP-EG9THKE with PID 2208 (C:\Users\User\Downloads\lab6\target\classes started by User in C:\Users\User\Downloads\lab6)
+2025-03-26 00:10:10 [main] DEBUG io.swagger.Swagger2SpringBoot - Running with Spring Boot v2.1.16.RELEASE, Spring v5.1.17.RELEASE
+2025-03-26 00:10:10 [main] INFO  io.swagger.Swagger2SpringBoot - No active profile set, falling back to default profiles: default
+2025-03-26 00:10:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-26 00:10:12 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 123ms. Found 1 JPA repository interfaces.
+2025-03-26 00:10:13 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8081 (http)
+2025-03-26 00:10:13 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-03-26 00:10:13 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-03-26 00:10:13 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2025-03-26 00:10:13 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-03-26 00:10:13 [main] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2840 ms
+2025-03-26 00:10:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-03-26 00:10:13 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-03-26 00:10:14 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:10:14 [main] INFO  liquibase.changelog - Reading from public.databasechangelog
+2025-03-26 00:10:14 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:10:14 [main] INFO  liquibase.lockservice - Successfully acquired change log lock
+2025-03-26 00:10:14 [main] WARN  liquibase.hub - Skipping auto-registration
+2025-03-26 00:10:14 [main] INFO  liquibase.lockservice - Successfully released change log lock
+2025-03-26 00:10:15 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2025-03-26 00:10:15 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.17.Final}
+2025-03-26 00:10:15 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+2025-03-26 00:10:15 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2025-03-26 00:10:15 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2025-03-26 00:10:15 [main] INFO  o.h.e.j.e.i.LobCreatorBuilderImpl - HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2025-03-26 00:10:15 [main] INFO  org.hibernate.type.BasicTypeRegistry - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6ab826bb
+2025-03-26 00:10:15 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:10:16 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:10:16 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-26 00:10:17 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-03-26 00:10:17 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8081 (http) with context path ''
+2025-03-26 00:10:17 [main] INFO  io.swagger.Swagger2SpringBoot - Started Swagger2SpringBoot in 7.067 seconds (JVM running for 7.434)
+2025-03-26 00:10:29 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-26 00:10:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-03-26 00:10:29 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class java.lang.Long
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class io.swagger.model.Comment
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class io.swagger.model.Comment
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve org.springframework.http.ResponseEntity<io.swagger.model.Comment>
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class io.swagger.model.Comment]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class io.swagger.model.Comment
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class io.swagger.model.Comment
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class java.lang.Long
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class io.swagger.model.Comment
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve org.springframework.http.ResponseEntity<io.swagger.model.Comment>
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class io.swagger.model.Comment]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.Long]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve [simple type, class java.lang.String]
+2025-03-26 00:10:30 [http-nio-8081-exec-10] DEBUG i.s.v.c.c.ModelConverterContextImpl - resolve class java.lang.Long
+2025-03-26 00:10:30 [http-nio-8081-exec-10] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 504 ms
+2025-03-26 00:10:56 [http-nio-8081-exec-1] INFO  io.swagger.api.CommentsApiController - Получен запрос на создание комментария: content=string, author=string
+2025-03-26 00:10:56 [http-nio-8081-exec-1] INFO  io.swagger.service.CommentService - Создание нового комментария: content=string, author=string
+2025-03-26 00:10:56 [http-nio-8081-exec-1] DEBUG io.swagger.service.CommentService - Комментарий успешно создан с ID: 1
+2025-03-26 00:10:56 [http-nio-8081-exec-1] DEBUG io.swagger.api.CommentsApiController - Запрос на создание комментария успешно обработан, ID: 1
+2025-03-26 00:11:09 [http-nio-8081-exec-2] INFO  io.swagger.api.CommentsApiController - Получен запрос на создание комментария: content=string, author=string
+2025-03-26 00:11:09 [http-nio-8081-exec-2] INFO  io.swagger.service.CommentService - Создание нового комментария: content=string, author=string
+2025-03-26 00:11:09 [http-nio-8081-exec-2] DEBUG io.swagger.service.CommentService - Комментарий успешно создан с ID: 2
+2025-03-26 00:11:09 [http-nio-8081-exec-2] DEBUG io.swagger.api.CommentsApiController - Запрос на создание комментария успешно обработан, ID: 2
+2025-03-26 00:11:57 [Thread-2] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-03-26 00:11:57 [Thread-2] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-26 00:11:57 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-03-26 00:11:57 [Thread-2] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
